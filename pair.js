@@ -54,7 +54,7 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Cod3Uchiha_Tech.sendMessage(Pair_Code_By_Cod3Uchiha_Tech.user.id, { text: 'MANJIRO-SANO-MD;;;' + b64data });
+               let session = await Pair_Code_By_Cod3Uchiha_Tech.sendMessage(Pair_Code_By_Cod3Uchiha_Tech.user.id, { text: 'MANJIRO-SANO;;;' + b64data });
 
                let MANJIRO_SANO_MD_TEXT = `
 *_Pair Code By Cod3Uchiha Tech_*
